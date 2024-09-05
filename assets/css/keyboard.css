@@ -1,0 +1,45 @@
+body {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+div {
+  margin: 0.5rem 0;
+}
+
+.instructions {
+  border: 1px solid #aaaaaa;
+  padding: 0 1rem;
+  background-color: #eeeeee;
+}
+
+.contact {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px #ccc solid;
+}
+
+button,
+.button {
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 10px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+}
+
+/* Solution: removal of outline:none CSS */
+
+/* .link1 {
+      outline:none;
+    } */
+
+/* link2 styling not needed when span refactored to link, optional to delete */
+.link2 {
+  color: blue;
+  text-decoration: underline;
+}

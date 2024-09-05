@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <title>a11y Exercise Solution: Image Techniques</title>
+
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/images/favicon.png"
+    />
+
+    <!-- bootstrap.min css -->
+    <link
+      rel="stylesheet"
+      href="../assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body id="body">
+    <section class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content">
+              <h1 class="page-name">Exercise: Image Techniques</h1>
+              <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li>Solution</li>
+                <li class="active">Images</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <main>
+        <div class="image-container">
+          <h2>Informative <code>img</code> Element Image</h2>
+          <p>
+            Tip: The description should convey all of the information and
+            meaning in the image.
+          </p>
+          <!-- Image attribution: https://www.pexels.com/photo/white-and-yellow-card-on-gray-surface-226463/ -->
+          <!-- Solution 1: alt text -->
+          <img
+            class="informative-img"
+            src="../assets/images/splashpad_rules.jpeg"
+            alt="A splash pad rules sign displayed at a park that says 'Splash pad unsupervised area. Water Shoes Strongly recommended'. There are symbols that have a red circle strikethrough symbol around them to indicate activities that are not allowed. The symbols show food, a dog, a person climbing, a cigarette, a glass of wine, a bicycle, a skateboarder, and a yellow trianular symbol showing a person slipping and falling. Under the symbols are the hours of operation '9:00am - Dusk' as well as a St. Johns logo."
+          />
+          <!-- Solution 2: aria-label -->
+          <img
+            class="informative-img"
+            src="../assets/images/splashpad_rules.jpeg"
+            aria-label="A splash pad rules sign displayed at a park that says 'Splash pad unsupervised area. Water Shoes Strongly recommended'. There are symbols that have a red circle strikethrough symbol around them to indicate activities that are not allowed. The symbols show food, a dog, a person climbing, a cigarette, a glass of wine, a bicycle, a skateboarder, and a yellow trianular symbol showing a person slipping and falling. Under the symbols are the hours of operation '9:00am - Dusk' as well as a St. Johns logo."
+          />
+        </div>
+
+        <div class="image-container mt-4">
+          <h2>Decorative <code>img</code> Element Image</h2>
+          <p>
+            Tip: Omitting the alt attribute may result in screen readers
+            announcing the image path.
+          </p>
+          <!-- Image attribution: https://www.pexels.com/photo/defocused-image-of-lights-255379/ -->
+          <!-- Solution 1: empty string for alt -->
+          <img
+            class="decorative-img"
+            src="../assets/images/background_image.jpg"
+            alt=""
+          />
+
+          <!-- Solution 2: alt with no value set, computes to null just like an empty string -->
+          <img
+            class="decorative-img"
+            src="../assets/images/background_image.jpg"
+            alt
+          />
+
+          <!-- Solution 3 (not as good): using role="presentation" -->
+          <img
+            class="decorative-img"
+            src="../assets/images/background_image.jpg"
+            role="presentation"
+          />
+
+          <!-- Solution 4 (not as good): using aria-hidden -->
+          <img
+            class="decorative-img"
+            src="../assets/images/background_image.jpg"
+            aria-hidden="true"
+          />
+        </div>
+
+        <div class="image-container mt-4">
+          <h2>Informative CSS Image</h2>
+          <p>
+            Tip: Just because an image is implemented as a CSS background image
+            doesn't necessarily mean it should not be described.
+          </p>
+          <div class="informative-background-image"></div>
+          <!-- image attribition: Photo by Miguel Á. Padriñán: https://www.pexels.com/photo/defocused-image-of-lights-255379/ -->
+
+          <!-- Solution: adding role="img" and aria-label. -->
+          <!-- Note: alt will not work on a div even if the role is set to img. -->
+          <div
+            role="img"
+            aria-label="an airbag sticker inside a car shows graphical instructions incluidng not sitting backwards in your seat. not holding large items in ysour lap and reading the information guide."
+            class="informative-background-image"
+          ></div>
+        </div>
+
+        <div class="image-container mt-4">
+          <h2>Functional <code>img</code></h2>
+          <p>
+            Tip: Functional image descriptions should focus on the action that
+            is associated with the image.
+          </p>
+          <!-- Image attribution: https://thenounproject.com/icon/play-button-117815/ -->
+          <!-- Solution 1: using alt text-->
+          <img
+            class="play-button"
+            src="../assets/images/play-button.svg"
+            alt="Play"
+          />
+          <!-- Solution 2: using aria-label -->
+          <img
+            class="play-button"
+            src="../assets/images/play-button.svg"
+            aria-label="Play"
+          />
+        </div>
+
+        <div class="image-container m-4">
+          <h2>Text <code>img</code></h2>
+          <p>
+            Tip: It's important that we include all of the text and any other
+            relevant information in an image of text.
+          </p>
+          <!-- Image attribution: Photo by Charles Parker: https://www.pexels.com/photo/sign-showing-direction-on-city-street-5845730/ -->
+          <!-- Solution: using alt text -->
+          <img
+            class="text-image"
+            src="../assets/images/is-this-just-fantasy.jpg"
+            alt="A glowing purple neon sign says 'Is this just fantasy' in a hand-written style font"
+          />
+          <!-- Solution: using aria-label -->
+          <img
+            class="text-image"
+            src="../assets/images/is-this-just-fantasy.jpg"
+            aria-label="A glowing purple neon sign says 'Is this just fantasy' in
+          a hand-written style fonts"
+          />
+        </div>
+      </main>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

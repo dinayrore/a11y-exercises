@@ -1,0 +1,50 @@
+/* Images Page Stylesheet */
+
+body {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+.inline-text {
+  font-size: 2rem;
+}
+
+.image-container,
+.contact {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px #ccc solid;
+}
+
+.instructions {
+  border: 1px solid #aaaaaa;
+  /* margin: 0px 30px 30px 30px; */
+  padding: 0 1rem;
+  background-color: #eeeeee;
+}
+
+/* Image selectors */
+
+.informative-img,
+.text-image {
+  width: 25rem;
+  height: 35rem;
+}
+
+.decorative-img {
+  height: 25rem;
+  width: 50rem;
+}
+
+.informative-background-image {
+  height: 25rem;
+  width: 50rem;
+  background: url("./assets/airbag.jpg") no-repeat;
+  background-position-x: -60px;
+}
+
+.play-button {
+  height: 6rem;
+  width: 6rem;
+}
