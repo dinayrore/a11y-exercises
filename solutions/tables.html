@@ -52,11 +52,14 @@
         <div class="container">
           <h2 class="mt-5">A simple table with row and column headers</h2>
           <table class="table table-bordered table-striped">
-            <caption class="sr-only">
+            <!-- Invisible <caption> for tables: -->
+            <!-- Fix: Make the <caption> visible, as it provides important context for all users about the table’s contents. -->
+            <caption>
               Greensprings Running Club Personal Bests
             </caption>
             <thead class="thead-dark">
               <tr>
+                <!-- Fix: Add scope="col" to correctly associate headers with columns. -->
                 <th scope="col">Name</th>
                 <th scope="col">1 mile</th>
                 <th scope="col">5 km</th>
@@ -65,24 +68,28 @@
             </thead>
             <tbody>
               <tr>
+                <!-- Fix: Add scope="row" to correctly associate content with row. -->
                 <th scope="row">Mary</th>
                 <td>6:32</td>
                 <td>22:44</td>
                 <td>45:16</td>
               </tr>
               <tr>
+                <!-- Fix: Add scope="row" to correctly associate content with row. -->
                 <th scope="row">Betsy</th>
                 <td>7:43</td>
                 <td>26:47</td>
                 <td>55:38</td>
               </tr>
               <tr>
+                <!-- Fix: Add scope="row" to correctly associate content with row. -->
                 <th scope="row">Matt</th>
                 <td>5:55</td>
                 <td>21:09</td>
                 <td>42:17</td>
               </tr>
               <tr>
+                <!-- Fix: Add scope="row" to correctly associate content with row. -->
                 <th scope="row">Todd</th>
                 <td>7:01</td>
                 <td>24:21</td>
@@ -95,12 +102,16 @@
             A complex table with column headers and merged row headers
           </h2>
           <table class="table table-bordered table-striped">
-            <caption class="sr-only">
+            <caption>
               Greensprings Running Club Personal Bests
             </caption>
             <thead class="thead-dark">
               <tr>
-                <td colspan="2">&nbsp;</td>
+                <!-- Empty <td> used for spacing: -->
+                <!-- Fix: Replace the empty <td> with meaningful content or use visually hidden text (e.g., sr-only) to ensure clarity for screen readers. -->
+                <td class="sr-only" colspan="2">&nbsp;</td>
+                <!-- Fix: Add scope="col" to correctly associate headers with columns. -->
+                <th scope="col">Name</th>
                 <th scope="col">1 mile</th>
                 <th scope="col">5 km</th>
                 <th scope="col">10 km</th>
@@ -108,38 +119,46 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="rowgroup" rowspan="3">Females</th>
+                <!-- Fix: Change scope="rowgroup" to scope="row" to correctly associate headers with rows. -->
+                <th scope="row" rowspan="3">Females</th>
+                <!-- Fix: Add scope="row" to correctly associate content with row. -->
                 <th scope="row">Mary</th>
                 <td>6:32</td>
                 <td>22:44</td>
                 <td>45:16</td>
               </tr>
               <tr>
+                <!-- Fix: Add scope="row" to correctly associate content with row. -->
                 <th scope="row">Betsy</th>
                 <td>7:43</td>
                 <td>26:47</td>
                 <td>55:38</td>
               </tr>
               <tr>
+                <!-- Fix: Add scope="row" to correctly associate content with row. -->
                 <th scope="row">Joanne</th>
                 <td>9:51</td>
                 <td>38:15</td>
                 <td>1:56:01</td>
               </tr>
               <tr>
-                <th scope="rowgroup" rowspan="3">Males</th>
+                <!-- Fix: Change scope="rowgroup" to scope="row" to correctly associate headers with rows. -->
+                <th scope="row" rowspan="3">Males</th>
+                <!-- Fix: Add scope="row" to correctly associate content with row. -->
                 <th scope="row">Matt</th>
                 <td>5:55</td>
                 <td>21:09</td>
                 <td>42:17</td>
               </tr>
               <tr>
+                <!-- Fix: Add scope="row" to correctly associate content with row. -->
                 <th scope="row">Todd</th>
                 <td>7:01</td>
                 <td>24:21</td>
                 <td>50:35</td>
               </tr>
               <tr>
+                <!-- Fix: Add scope="row" to correctly associate content with row. -->
                 <th scope="row">Jake</th>
                 <td>7:51</td>
                 <td>24:31</td>

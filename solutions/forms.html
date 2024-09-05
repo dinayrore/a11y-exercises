@@ -53,10 +53,13 @@
     </section>
     <div class="container">
       <main>
-        <fieldset>
-          <legend><h2 class="mt-4">Use HTML Techniques</h2></legend>
+        <h2>Use HTML techniques</h2>
+        <hr />
+        <!-- Use HTML form -->
+        <form>
           <div class="form-group form-inline">
-            <label for="firstname">First name:</label>
+            <!-- Fix: Visually indicate required fields using labels. -->
+            <label for="firstname">First name (required):</label>
             <input
               type="text"
               class="form-control"
@@ -66,7 +69,8 @@
           </div>
 
           <div class="form-group form-inline">
-            <label for="lastname">Last name:</label>
+            <!-- Fix: Visually indicate required fields using labels. -->
+            <label for="lastname">Last name (required):</label>
             <input
               type="text"
               class="form-control"
@@ -75,6 +79,7 @@
             />
           </div>
           <div class="form-group">
+            <!-- Fix: Always use <label> elements associated with inputs via the for attribute -->
             <label><h4>Preferred contact method</h4></label>
             <div class="form-check">
               <input
@@ -84,6 +89,8 @@
                 name="contact"
                 aria-labelledby="aria-email"
               />
+              <!-- Fix: Always use <label> elements associated with inputs via the for attribute -->
+
               <label class="form-check-label" for="aria-email">Email</label>
             </div>
             <div class="form-check">
@@ -94,6 +101,7 @@
                 name="contact"
                 aria-labelledby="aria-phone"
               />
+              <!-- Fix: Always use <label> elements associated with inputs via the for attribute -->
               <label class="form-check-label" for="aria-phone">Phone</label>
             </div>
             <div class="form-check">
@@ -104,66 +112,76 @@
                 name="contact"
                 aria-labelledby="aria-mail"
               />
+              <!-- Fix: Always use <label> elements associated with inputs via the for attribute -->
               <label class="form-check-label" for="aria-mail">Mail</label>
             </div>
           </div>
-        </fieldset>
+        </form>
 
-        <fieldset>
-          <legend><h2 class="mt-4">Use ARIA Techniques</h2></legend>
-          <div class="form-group form-inline">
-            <label for="firstname">First name:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="firstname"
-              name="firstname"
-            />
-          </div>
+        <h2>Use ARIA techniques</h2>
+        <hr />
+        <!-- Fix: Add aria-required="true" to required fields  -->
+        <div class="form-group form-inline">
+          <!-- Fix: Always use <label> elements associated with inputs via the for attribute -->
+          <label for="firstname">First name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstname"
+            name="firstname"
+            aria-required="true"
+          />
+        </div>
+        <!-- Fix: Add aria-required="true" to required fields  -->
+        <div class="form-group form-inline">
+          <!-- Fix: Always use <label> elements associated with inputs via the for attribute -->
+          <label for="lastname">Last name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastname"
+            name="lastname"
+            aria-required="true"
+          />
+        </div>
 
-          <div class="form-group form-inline">
-            <label for="lastname">Last name:</label>
+        <div class="form-group">
+          <!-- Fix: Always use <label> elements associated with inputs via the for attribute -->
+          <label><h4>Preferred contact method</h4></label>
+          <div class="form-check">
             <input
-              type="text"
-              class="form-control"
-              id="lastname"
-              name="lastname"
+              type="radio"
+              class="form-check-input"
+              id="aria-email"
+              name="contact"
+              aria-labelledby="aria-email"
             />
+            <!-- Fix: Always use <label> elements associated with inputs via the for attribute -->
+            <label class="form-check-label" for="aria-email">Email</label>
           </div>
-          <div class="form-group">
-            <label><h4>Preferred contact method</h4></label>
-            <div class="form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                id="aria-email"
-                name="contact"
-                aria-labelledby="aria-email"
-              />
-              <label class="form-check-label" for="aria-email">Email</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                id="aria-phone"
-                name="contact"
-                aria-labelledby="aria-phone"
-              />
-              <label class="form-check-label" for="aria-phone">Phone</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                id="aria-mail"
-                name="contact"
-                aria-labelledby="aria-mail"
-              />
-              <label class="form-check-label" for="aria-mail">Mail</label>
-            </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="aria-phone"
+              name="contact"
+              aria-labelledby="aria-phone"
+            />
+            <!-- Fix: Always use <label> elements associated with inputs via the for attribute -->
+            <label class="form-check-label" for="aria-phone">Phone</label>
           </div>
-        </fieldset>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="aria-mail"
+              name="contact"
+              aria-labelledby="aria-mail"
+            />
+            <!-- Fix: Always use <label> elements associated with inputs via the for attribute -->
+            <label class="form-check-label" for="aria-mail">Mail</label>
+          </div>
+        </div>
       </main>
     </div>
 

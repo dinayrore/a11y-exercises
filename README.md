@@ -1,4 +1,4 @@
-# A11y Code Exercises
+# a11y Code Exercises
 
 ## Description
 

@@ -47,24 +47,21 @@
     </section>
     <div class="container">
       <main>
-        <h1 tabindex="0" class="mt-5">
-          Keyboard Accessibility Gone Wrong! Summit
-        </h1>
-
-        <h2 tabindex="0">Day 1 Agenda</h2>
-        <p tabindex="0">
+        <!-- Solution: removal of tabindex="0" removes heading from the focus order -->
+        <h1 class="mt-5">Keyboard Accessibility Gone Wrong! Summit</h1>
+        <h2>Day 1 Agenda</h2>
+        <p>
           On day one, we will learn what it is like to navigate a website using
           only your keyboard. Then we will experience both good and bad
           websites.
         </p>
-        <p tabindex="0">
-          Joe Smith from <a href="#" class="link1">Ye Olde A11y Tavern</a> will
-          be your host.
+        <!-- Solution: added link to focus order by adding href -->
+        <p>
+          Joe Smith from
+          <a href="#" class="btn-link">Ye Olde A11y Tavern</a> will be your
+          host.
         </p>
-        <p tabindex="0">
-          Be sure to download the required files ahead of time:
-        </p>
-
+        <p>Be sure to download the required files ahead of time:</p>
         <!-- Button with Bootstrap class -->
         <button
           class="btn btn-primary"
@@ -72,64 +69,54 @@
         >
           Download Files
         </button>
-
-        <h2 tabindex="0" class="mt-4">Day 2 Agenda</h2>
-        <p tabindex="0">
+        <!-- Solution: removal of tabindex="0" removes heading from the focus order -->
+        <h2 class="mt-4">Day 2 Agenda</h2>
+        <p>
           On day two, we will mess around with a little code in the morning.
         </p>
-        <p tabindex="0">
+        <p>
           Lunch will be hosted at
           <a href="https://www.deque.com" class="btn-link" target="_blank"
             >Ye Olde A11y Tavern</a
           >.
         </p>
-        <p tabindex="0">
+        <p>
           In the afternoon, we will take a tour of the A11y Bros Brewing
           facility and have a deep discussion on the hottest new topic in
           accessibility: “Button vs Link”.
         </p>
 
-        <h2 tabindex="0" class="mt-4">Register Now!</h2>
-
-        <!-- Bootstrap form fields -->
+        <h2 class="mt-4">Register Now!</h2>
         <form>
           <div class="form-group">
             <label for="firstname">First name:</label>
+            <!-- Solution: added to focus order removing tabindex="-1" -->
             <input
               type="text"
               class="form-control"
               name="firstname"
               id="firstname"
-              tabindex="1"
             />
           </div>
-
           <div class="form-group">
             <label for="lastname">Last name:</label>
+            <!-- Solution: added to focus order removing tabindex="-1" -->
             <input
               type="text"
               class="form-control"
               name="lastname"
               id="lastname"
-              tabindex="2"
             />
           </div>
-
           <div class="form-group">
             <label for="cc">Credit Card #:</label>
-            <input
-              type="text"
-              class="form-control"
-              name="cc"
-              id="cc"
-              tabindex="3"
-            />
+            <!-- Solution: added to focus order removing tabindex="-1" -->
+            <input type="text" class="form-control" name="cc" id="cc" />
           </div>
 
-          <!-- Button with proper tabindex -->
+          <!-- Solution: fixed focus order jump by removing positive integer tabindex="1", allows for natural DOM order for this interactive element -->
           <button
             class="btn btn-success"
-            tabindex="4"
             onclick="javascript:alert('Thanks for registering!')"
           >
             Submit

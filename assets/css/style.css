@@ -2580,8 +2580,36 @@ img {
   display: block;
 }
 
+/* Image selectors */
+
 .image-container img {
-  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.informative-img,
+.text-image {
+  width: 25rem;
+  height: 35rem;
+}
+
+.decorative-img {
+  height: 25rem;
+  width: auto;
+}
+
+.informative-background-image {
+  height: 25rem;
+  width: 50rem;
+  background: url("./assets/airbag.jpg") no-repeat;
+  background-position-x: -60px;
+}
+
+.play-button {
+  height: 6rem;
+  width: 6rem;
 }
 
 .listexercise a {
@@ -2590,4 +2618,9 @@ img {
 
 .card {
   padding: 20px !important;
+}
+
+.exercises .btn {
+  margin-top: 20px;
+  margin-right: 30px;
 }
