@@ -153,11 +153,31 @@ input[type="tel"]:focus {
 }
 
 /*=== Buttons ===*/
+.btn-main p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn-outline-dark p {
+  color: #000;
+  font-size: 1rem;
+}
+
 .btn-outline-dark {
+  color: #000;
+  background: #fff;
+  border: 0.13rem solid #000;
+  display: inline-block;
+  font-size: 0.9rem;
+  letter-spacing: 0.13rem;
   padding: 1rem 2rem;
-  border: 1px solid #000;
-  border-radius: 3rem;
   text-transform: uppercase;
+  font-weight: 200;
+  margin-right: 3rem;
+}
+.btn-outline-dark:hover {
+  color: black;
+  background: #fff;
 }
 
 .btn-main,
