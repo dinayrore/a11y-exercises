@@ -156,11 +156,13 @@ input[type="tel"]:focus {
 .btn-main p {
   color: #fff;
   font-size: 1rem;
+  margin: 0;
 }
 
 .btn-outline-dark p {
   color: #000;
   font-size: 1rem;
+  margin: 0;
 }
 
 .btn-outline-dark {
