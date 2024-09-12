@@ -26,10 +26,11 @@
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/tables.css" />
   </head>
 
   <body id="body">
-    <section class="page-header">
+    <header class="page-header">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -42,13 +43,23 @@
               </ol>
               <h2>Instructions</h2>
               <ol>
-                <li>1. View the two tables</li>
-                <li>2. Identify accessibility (a11y) issues in the code</li>
-                <li>3. Fix the issues using HTML techniques</li>
+                <li>1. Inspect the following data tables</li>
+                <li>
+                  2. Identify and fix the accessibility issues using HTML
+                  techniques.
+                </li>
+                <li>
+                  3. Test the page using
+                  <a
+                    role="link"
+                    href="https://www.ssa.gov/accessibility/andi/help/install.html"
+                    >ANDI</a
+                  >, and a screen reader to ensure your changes are accessible.
+                </li>
               </ol>
 
-              <h3>Learn more:</h3>
               <ul class="listexercise">
+                <li>Additional Resources:</li>
                 <li>
                   <a
                     href="https://www.w3.org/WAI/tutorials/tables/two-headers/"
@@ -68,7 +79,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </header>
     <div class="container">
       <main>
         <div class="container">
@@ -169,6 +180,72 @@
               </tr>
             </tbody>
           </table>
+          <h2 class="mt-5">Another "simple" table</h2>
+          <div class="table">
+            <p>Arts and Music Schedule</p>
+            <div class="table-container">
+              <div class="table-row table-row-first">
+                <div class="left-cell table-cell"></div>
+                <div class="table-header-cell table-cell">Monday</div>
+                <div class="table-header-cell table-cell">Tuesday</div>
+                <div class="table-header-cell table-cell">Wednesday</div>
+                <div class="table-header-cell table-cell">Thursday</div>
+                <div class="table-header-cell table-cell table-cell-last">
+                  Friday
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="left-cell table-header-cell table-cell">
+                  9:00 am
+                </div>
+                <div class="table-cell">Band</div>
+                <div class="table-cell">Choir</div>
+                <div class="table-cell">Orchestra</div>
+                <div class="table-cell">Orchestra</div>
+                <div class="table-cell table-cell-last">Dress rehearsal</div>
+              </div>
+              <div class="table-row">
+                <div class="left-cell table-header-cell table-cell">
+                  10:00 am
+                </div>
+                <div class="table-cell">Strings</div>
+                <div class="table-cell">Dance</div>
+                <div class="table-cell">Choir</div>
+                <div class="table-cell">Dance</div>
+                <div class="table-cell table-cell-last">Art show set up</div>
+              </div>
+              <div class="table-row">
+                <div class="left-cell table-header-cell table-cell">
+                  11:00 am
+                </div>
+                <div class="table-cell">Art studio</div>
+                <div class="table-cell">Art studio</div>
+                <div class="table-cell">Art studio</div>
+                <div class="table-cell">Art studio</div>
+                <div class="table-cell table-cell-last">Award ceremoy</div>
+              </div>
+              <div class="table-row">
+                <div class="left-cell table-header-cell table-cell">
+                  1:00 pm
+                </div>
+                <div class="table-cell">Cullinary arts</div>
+                <div class="table-cell">Creative writing</div>
+                <div class="table-cell">Cullinary arts</div>
+                <div class="table-cell">Creative writing</div>
+                <div class="table-cell table-cell-last">Concert</div>
+              </div>
+              <div class="table-row last-row">
+                <div class="left-cell table-header-cell table-cell">
+                  2:00 pm
+                </div>
+                <div class="table-cell">Studio time</div>
+                <div class="table-cell">Creative lab</div>
+                <div class="table-cell">Studio time</div>
+                <div class="table-cell">Creative lab</div>
+                <div class="table-cell table-cell-last">Art show</div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>

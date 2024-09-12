@@ -28,10 +28,11 @@
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/tables.css" />
   </head>
 
   <body id="body">
-    <section class="page-header">
+    <header class="page-header">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -46,7 +47,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </header>
     <div class="container">
       <main>
         <div class="container">
@@ -166,7 +167,63 @@
               </tr>
             </tbody>
           </table>
-        </div>
+          
+          <!-- Fix: Don't use <div>s to create data tables. It's more work and inaccessible! -->
+          <h2 class="mt-5">Another "simple" data table</h2>
+          <table class="table table-bordered table-striped">
+            <caption>Arts and Music Schedule</caption>
+            <thead class="thead-dark">
+              <td class="sr-only" colspan="2">&nbsp;</td>
+              <th scope="col">Monday</th>
+              <th scope="col">Tuesday</th>
+              <th scope="col">Wednesday</th>
+              <th scope="col">Thursday</th>
+              <th scope="col">Friday</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">9:00 AM</th>
+                <td>Band</td>
+                <td>Choir</td>
+                <td>Orchestra</td>
+                <td>Orchestra</td>
+                <td>Dress rehearsal</td>
+              </tr>
+              <tr>
+                <th scope="row">10:00 AM</th>
+                <td>Strings</td>
+                <td>Dance</td>
+                <td>Choir</td>
+                <td>Dance</td>
+                <td>Art show set up</td>
+              </tr>
+              <tr>
+                <th scope="row">11:00 AM</th>
+                <td>Art Studio</td>
+                <td>Art Studio</td>
+                <td>Art Studio</td>
+                <td>Art Studio</td>
+                <td>Award ceremony</td>
+              </tr>
+              <tr>
+                <th scope="row">1:00 PM</th>
+                <td>Culinary arts</td>
+                <td>Creative writing</td>
+                <td>Culinary arts</td>
+                <td>Creative writing</td>
+                <td>Concert</td>
+              </tr>
+              <tr>
+                <th scope="row">2:00 PM</th>
+                <td>Studio time</td>
+                <td>Creative lab</td>
+                <td>Studio time</td>
+                <td>Creative lab</td>
+                <td>Art show</td>
+              </tr>
+            </tbody>
+            
+          </table>
       </main>
     </div>
 

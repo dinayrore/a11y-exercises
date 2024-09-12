@@ -24,14 +24,14 @@ In this exercise, you will explore techniques for making your web pages keyboard
 
 In this exercise, you will learn how to use semantic HTML elements to improve the accessibility and structure of your web pages. Proper use of semantic HTML elements like `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` to improve accessibility and SEO.
 
-## Images
+## Images & Alt Text
 
 In this exercise, you will learn about the importance of responsive design and providing descriptive alt text for images to support screen readers.
 
-## Tables
+## Data Tables
 
 In this exercise, you will practice creating accessible tables, including proper table structure, headers, and captions, to ensure that tabular data is presented in an organized and understandable manner.
 
-## Forms
+## Accessible Forms
 
 In this exercise, you will learn how to create accessible forms, including proper labeling, error handling, and focus management, to ensure that all users, including those using assistive technologies, can easily interact with your forms.

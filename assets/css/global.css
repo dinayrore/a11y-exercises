@@ -107,12 +107,17 @@ ul {
   list-style: none;
 }
 
-a,
+a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 a:focus,
 a:hover {
   text-decoration: none;
   outline: 0;
-  color: #000;
+  color: #0d6efd;
 }
 
 blockquote {
@@ -121,6 +126,10 @@ blockquote {
   padding: 1.3rem 3rem;
   text-align: left;
   color: #777;
+}
+
+caption {
+  color: #757575;
 }
 
 /*=== Forms ===*/
@@ -157,12 +166,16 @@ input[type="tel"]:focus {
   color: #fff;
   font-size: 1rem;
   margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .btn-outline-dark p {
   color: #000;
   font-size: 1rem;
   margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .btn-outline-dark {
@@ -170,16 +183,19 @@ input[type="tel"]:focus {
   background: #fff;
   border: 0.13rem solid #000;
   display: inline-block;
-  font-size: 0.9rem;
   letter-spacing: 0.13rem;
-  padding: 1rem 2rem;
+  padding: 2rem;
   text-transform: uppercase;
-  font-weight: 200;
   margin-right: 3rem;
+  text-decoration: none;
 }
 .btn-outline-dark:hover {
   color: black;
   background: #fff;
+}
+
+.btn-success {
+  background-color: #3a833a;
 }
 
 .btn-main,
@@ -189,12 +205,11 @@ input[type="tel"]:focus {
   background: #000;
   color: #fff;
   display: inline-block;
-  font-size: 0.9rem;
   letter-spacing: 0.13rem;
-  padding: 1rem 2rem;
+  padding: 2rem;
   text-transform: uppercase;
-  font-weight: 200;
   margin-right: 3rem;
+  text-decoration: none;
 }
 .btn-main.btn-icon i,
 .btn-icon.btn-small i,
@@ -276,8 +291,12 @@ input[type="tel"]:focus {
   font-weight: 200;
   font-size: 1.25rem;
 }
+.breadcrumb > .active {
+  color: #707070;
+}
 .page-header .breadcrumb li a {
   color: #000;
+  font-weight: 400;
 }
 
 .single-page-header {

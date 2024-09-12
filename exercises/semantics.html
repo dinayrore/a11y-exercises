@@ -29,7 +29,7 @@
   </head>
 
   <body id="body">
-    <section class="page-header">
+    <header class="page-header">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -42,8 +42,11 @@
               </ol>
               <h2>Instructions</h2>
               <ul>
-                <li>1. Inspect the HTML structure – it's divs everywhere!</li>
-                <li>2. Identify where more meaningful tags should be used.</li>
+                <li>
+                  1. Inspect the HTML structure – it's <code>&lt;div&gt;</code>s
+                  everywhere!
+                </li>
+                <li>2. Identify where more meaningful tags could be used.</li>
                 <li>
                   3. Replace the <code>&lt;div&gt;</code>s with semantic HTML
                   elements. (Think <code>&lt;header&gt;</code>,
@@ -63,35 +66,39 @@
           </div>
         </div>
       </div>
-    </section>
+    </header>
     <div class="container">
-      <main>
-        <div class="container mt-5">
-          <div class="text-center mb-4">Welcome to My Blog</div>
-          <div class="card mb-4">
-            <div class="card-body">
-              <div class="card-title">
-                This is a post about web accessibility.
-              </div>
-              <div class="card-text">
-                <small>Posted on September 1, 2024</small>
-              </div>
-            </div>
-            <div class="mb-4">
+      <div class="container mt-5">
+        <div class="text-center mb-4">Welcome to My Blog</div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="card-title">Accessible Blog Post</div>
+            <div class="card-text">
               <div>
-                <div>Read more:</div>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="card-link">Accessibility Tips</a></li>
-                  <li><a href="#" class="card-link">Semantic HTML Guide</a></li>
-                </ul>
+                This is a post about how to make your blog more accessible.
+                There are so many different ways you can solve for accessibility
               </div>
+              <div>Posted on September 1, 2024</div>
             </div>
           </div>
-          <div class="text-center mt-4">
-            <div>© 2024 My Blog</div>
+          <div class="mb-4">
+            <div>
+              <div>Read more:</div>
+              <div class="list-unstyled">
+                <div>
+                  <div href="#" class="card-link">Accessibility Tips</div>
+                </div>
+                <div>
+                  <div href="#" class="card-link">Semantic HTML Guide</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </main>
+        <div class="text-center mt-4">
+          <div>© 2024 My Blog</div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
