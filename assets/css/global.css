@@ -184,7 +184,7 @@ input[type="tel"]:focus {
   border: 0.13rem solid #000;
   display: inline-block;
   letter-spacing: 0.13rem;
-  padding: 2rem;
+  padding: 1.5rem;
   text-transform: uppercase;
   margin-right: 3rem;
   text-decoration: none;
@@ -206,7 +206,7 @@ input[type="tel"]:focus {
   color: #fff;
   display: inline-block;
   letter-spacing: 0.13rem;
-  padding: 2rem;
+  padding: 1.5rem;
   text-transform: uppercase;
   margin-right: 3rem;
   text-decoration: none;
