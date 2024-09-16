@@ -14,6 +14,10 @@ To get started with the exercises, follow these steps:
 4. Install the Live Server recommended extension from Visual Studio Code marketplace.
 5. Right-click on the `index.html` file and select "Open with Live Server". This will start a local web server and open the `index.html` file in your default browser.
 
+As with all things, there is more than one way to view the `index.html` file.
+Clicking on `index.html` will also open the web page in your default browser.
+You may also visit: [a11y exercises on Github Pages](https://dinayrore.github.io/a11y-exercises/) to access the exercises.
+
 ## Exercises
 
 ## Keyboard Accessibility
